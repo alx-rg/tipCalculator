@@ -1,0 +1,77 @@
+<!-- 
+Write the base HTML document tags
+Add tags and HTML markup for calculator elements. 
+Be sure to set the appropriate attributes on each of these elements.
+-->
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tip Calculator</title>
+  <link rel='stylesheet' href='styles.css'>
+</head>
+<body>
+  <header class='page-header'>
+    <h1>Tip Calculator</h4>
+  </header>
+
+  <main class='items' id='items'>
+
+      <div id ='bill-total'>
+         <!-- bill total here in 0.00 
+         Bill - element: <input>
+            Attributes: id, class, type, placeholder
+         -->
+      </div>
+
+      <div id ='tip-percent'>
+         <!-- tip percentage here in 15%
+         Tip - element: <input>
+            Attributes: id, class, type, placeholder
+         -->
+      </div>
+
+      <div id ='num-people'>
+         <!-- number of people splitting bill here 
+         Number of people - element: <input>
+            Attributes: id, class, type, placeholder
+         -->
+      </div>
+  </main>
+
+  <footer class='page-footer'>
+
+      <div id = 'tip-total'>
+         <!-- Display Tip Total here in $0.00 
+         Display tip - element: could be <h1-6>, <p>, <span>, <div>, or <output> you decide!
+            Attributes: id, class
+         -->
+      </div>
+
+      <div id = 'bill-tip-total'>
+         <!-- total BILL once the tip is applied 
+         Display total - element: <h1-6>, <p>, <span>, <div>, or <output> you decide!
+            Attributes: id, class 
+         -->
+      </div>
+         
+      <div id = 'tip-each'>
+         <!-- tip per person once split up 
+         Display person tip - element: <h1-6>, <p>, <span>, <div>, or <output> you decide!
+            Attributes: id, class 
+         -->
+      </div>
+      
+      <div id = 'bill-each'>
+         <!-- bill per person total once split up 
+         Display PER PERSON total - element: <h1-6>, <p>, <span>, <div>, or <output> you decide!
+            Attributes: id, class          
+         -->
+      </div>
+  </footer>
+
+  <script src='scripts.js' type="module"></script>
+
+</body>
+</html>
