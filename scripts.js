@@ -1,26 +1,60 @@
-const inputBill = document.querySelector('#input-bill')
-const inputTip = document.querySelector('#input-tip')
-const inputPeople = document.querySelector('#input-people')
-const outputTip = document.querySelector('#output-tip-total')
-const outputBillTotal = document.querySelector('#output-bill-total')
-const outputTipEachPerson = document.querySelector('#output-tip-each-person')
-const outputBillEachPerson = document.querySelector('#output-bill-each-person-total')
 
-section1.addEventListener('change', updateDisplay);
-
-function updateDisplay (e) {
-	let target = e.target.id;
-	console.log(target)
-
-	if (target === )
-
-
-
-
+window.onload = () =>
+//the function called when Calculate button is clicked.
+{
+	 /*calling a function calculateTip
+	  which will calculate the tip for the bill.*/
+	 document.querySelector('#calculate').onclick = calculateTip;
 }
 
+//let defaultBill = 0.00;
+//let defaultTip = 0.00;
+//let defaultPerson = 0;
+
+function calculateTip (e) {
+	//INPUTS
+	const inputBill = document.querySelector('#input-bill').value;
+	const inputTip = document.querySelector('#input-tip').value;
+	const inputPeople = document.querySelector('#input-people').value;
+	//OUTPUTS 
+	let outputTip = document.querySelector('#output-tip-total').value;
+	let outputBillTotal = document.querySelector('#output-bill-total').value;
+	let outputTipEachPerson = document.querySelector('#output-tip-each-person').value;
+	let outputBillEachPerson = document.querySelector('#output-bill-each-person-total').value;
 
 
+	section1.addEventListener('change', calculateTip);
+
+
+	let target = e.target.id;
+	//console.log(target)
+		
+	console.log(inputBill)
+	console.log(inputTip)
+	console.log(inputPeople)
+
+	//Output total of the tip based on the percentage given
+	let tipTotal = (inputTip / inputBill) * 100;
+	outputTip = tipTotal.toFixed(2);
+	console.log(outputTip)
+
+	//Output total of the Bill including the tip
+	let billTotal = inputBill + outputTip;
+	outputBillTotal = billTotal.toFixed(2)
+	console.log(outputBillTotal)
+
+	//Output the TIP amount for each person in the group
+	let tipTotalEachP = outputTip / inputPeople
+	outputTipEachPerson = tipTotalEachP.toFixed(2)
+	console.log(outputTipEachPerson)
+
+
+	//Output the TOTAL BILL including tip for each person
+	let billPlusTipPerPerson = outputBillTotal / inputPeople
+	outputBillEachPerson = billPlusTipPerPerson.toFixed(2)
+	console.log(outputBillEachPerson)
+
+}
 
 
 /* import data from './data.js'

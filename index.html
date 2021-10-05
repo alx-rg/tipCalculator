@@ -11,7 +11,7 @@
       <section class='section1' id='section1'>
          
          <label>Bill</label>
-         <input id='bill-input' type='number'>
+         <input id='input-bill' type='number'>
          <!-- bill total here in 0.00 
          Bill - element: <input>
             Attributes: id, class, type, placeholder
@@ -37,14 +37,14 @@
       <section class='section2' id='section2'>
 
       <label>Tip</label>
-      <p id ='tip-output-total'>$0.00</p>
+      <p id ='output-tip-total'>$0.00</p>
       <!-- Display Tip Total here in $0.00 
       Display tip - element: could be <h1-6>, <p>, <span>, <div>, or <output> you decide!
       Attributes: id, class
       -->
       
       <label>Total</label>
-      <p id ='bill-output-total'>$0.00</p>
+      <p id ='output-bill-total'>$0.00</p>
       
       <!-- total BILL once the tip is applied 
       Display total - element: <h1-6>, <p>, <span>, <div>, or <output> you decide!
@@ -52,19 +52,27 @@
       -->
 
       <label>Tip Per Person</label>
-      <p id ='tip-each-person'>$0.00</p>
+      <p id ='output-tip-each-person'>$0.00</p>
       <!-- tip per person once split up 
       Display person tip - element: <h1-6>, <p>, <span>, <div>, or <output> you decide!
       Attributes: id, class 
       -->
       
       <label>Bill Per Person</label>
-      <p id ='bill-each-person-total'>$0.00</p>      
+      <p id ='output-bill-each-person-total'>$0.00</p>      
       <!-- bill per person total once split up 
       Display PER PERSON total - element: <h1-6>, <p>, <span>, <div>, or <output> you decide!
       Attributes: id, class   
       --> 
       </section>
+
+      <input type="text" id="persons"
+      placeholder="Number of people sharing the bill">
+      <button id="calculate">Calculate</button>
+      </div>
+
+      <div class="tip">
+         
 
    </div>
  
