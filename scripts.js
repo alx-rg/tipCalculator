@@ -1,10 +1,24 @@
-const billInput = document.querySelector('#bill')
-...
-billInput
-tipInput
-peopleInput
-displayTip
-displayTotal 
+const inputBill = document.querySelector('#input-bill')
+const inputTip = document.querySelector('#input-tip')
+const inputPeople = document.querySelector('#input-people')
+const outputTip = document.querySelector('#output-tip-total')
+const outputBillTotal = document.querySelector('#output-bill-total')
+const outputTipEachPerson = document.querySelector('#output-tip-each-person')
+const outputBillEachPerson = document.querySelector('#output-bill-each-person-total')
+
+section1.addEventListener('change', updateDisplay);
+
+function updateDisplay (e) {
+	let target = e.target.id;
+	console.log(target)
+
+	if (target === )
+
+
+
+
+}
+
 
 
 
