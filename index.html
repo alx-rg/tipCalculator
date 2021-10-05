@@ -1,9 +1,3 @@
-<!-- 
-Write the base HTML document tags
-Add tags and HTML markup for calculator elements. 
-Be sure to set the appropriate attributes on each of these elements.
--->
-
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -12,65 +6,68 @@ Be sure to set the appropriate attributes on each of these elements.
   <link rel='stylesheet' href='styles.css'>
 </head>
 <body>
-  <header class='page-header'>
-    <h1>Tip Calculator</h4>
-  </header>
+   <div class='container'>
 
-  <main class='items' id='items'>
-
-      <div id ='bill-total'>
+      <section class='section1' id='section1'>
+         
+         <label>Bill</label>
+         <input id='bill-input' type='number'>
          <!-- bill total here in 0.00 
          Bill - element: <input>
             Attributes: id, class, type, placeholder
          -->
-      </div>
-
-      <div id ='tip-percent'>
+      
+         <label>Tip %</label>
+         <input id ='input-tip' type='number'>
          <!-- tip percentage here in 15%
          Tip - element: <input>
             Attributes: id, class, type, placeholder
          -->
-      </div>
-
-      <div id ='num-people'>
+                  
+         <label>Number of people</label>
+         <input id ='input-people' type='number'>
          <!-- number of people splitting bill here 
          Number of people - element: <input>
             Attributes: id, class, type, placeholder
          -->
-      </div>
-  </main>
-
-  <footer class='page-footer'>
-
-      <div id = 'tip-total'>
-         <!-- Display Tip Total here in $0.00 
-         Display tip - element: could be <h1-6>, <p>, <span>, <div>, or <output> you decide!
-            Attributes: id, class
-         -->
-      </div>
-
-      <div id = 'bill-tip-total'>
-         <!-- total BILL once the tip is applied 
-         Display total - element: <h1-6>, <p>, <span>, <div>, or <output> you decide!
-            Attributes: id, class 
-         -->
-      </div>
          
-      <div id = 'tip-each'>
-         <!-- tip per person once split up 
-         Display person tip - element: <h1-6>, <p>, <span>, <div>, or <output> you decide!
-            Attributes: id, class 
-         -->
-      </div>
-      
-      <div id = 'bill-each'>
-         <!-- bill per person total once split up 
-         Display PER PERSON total - element: <h1-6>, <p>, <span>, <div>, or <output> you decide!
-            Attributes: id, class          
-         -->
-      </div>
-  </footer>
+      </section>
 
+
+      <section class='section2' id='section2'>
+
+      <label>Tip</label>
+      <p id ='tip-output-total'>$0.00</p>
+      <!-- Display Tip Total here in $0.00 
+      Display tip - element: could be <h1-6>, <p>, <span>, <div>, or <output> you decide!
+      Attributes: id, class
+      -->
+      
+      <label>Total</label>
+      <p id ='bill-output-total'>$0.00</p>
+      
+      <!-- total BILL once the tip is applied 
+      Display total - element: <h1-6>, <p>, <span>, <div>, or <output> you decide!
+         Attributes: id, class 
+      -->
+
+      <label>Tip Per Person</label>
+      <p id ='tip-each-person'>$0.00</p>
+      <!-- tip per person once split up 
+      Display person tip - element: <h1-6>, <p>, <span>, <div>, or <output> you decide!
+      Attributes: id, class 
+      -->
+      
+      <label>Bill Per Person</label>
+      <p id ='bill-each-person-total'>$0.00</p>      
+      <!-- bill per person total once split up 
+      Display PER PERSON total - element: <h1-6>, <p>, <span>, <div>, or <output> you decide!
+      Attributes: id, class   
+      --> 
+      </section>
+
+   </div>
+ 
   <script src='scripts.js' type="module"></script>
 
 </body>
