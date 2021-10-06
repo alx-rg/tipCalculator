@@ -63,17 +63,28 @@ input {
 .totals {
 display: flex;
 justify-content: space-between;
+
 }
 
 h3 {
    margin: 5px 0 5px 0;
    flex: 0;
+   font-weight: 300;
+}
+
+h4{
+   font-weight: 200;
+   margin:0;
+   padding: 15 0 0 0;
+   line-height: 0;
+   font-size: 14px;
 }
 
 p {
    color: rgb(58, 58, 58);
    display: inline;
-   
+   font-weight: 900;
+   font-size: 20px;
 }
 
 .line{
