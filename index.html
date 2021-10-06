@@ -11,21 +11,21 @@
       <section class='section1' id='section1'>
          
          <label>Bill</label>
-         <input id='input-bill' type='number'>
+         <input id='input-bill' type='number' placeholder='$0.00' >
          <!-- bill total here in 0.00 
          Bill - element: <input>
             Attributes: id, class, type, placeholder
          -->
       
          <label>Tip %</label>
-         <input id ='input-tip' type='number'>
+         <input id ='input-tip' type='number' placeholder='15' value='15'>
          <!-- tip percentage here in 15%
          Tip - element: <input>
             Attributes: id, class, type, placeholder
          -->
                   
          <label>Number of people</label>
-         <input id ='input-people' type='number'>
+         <input id ='input-people' type='number' placeholder='1' value='1'>
          <!-- number of people splitting bill here 
          Number of people - element: <input>
             Attributes: id, class, type, placeholder
@@ -35,44 +35,41 @@
 
 
       <section class='section2' id='section2'>
-
-      <label>Tip</label>
+      <div class='totals'>
+      <h3 id='total'>Tip:</h3>
       <p id ='output-tip-total'>$0.00</p>
       <!-- Display Tip Total here in $0.00 
       Display tip - element: could be <h1-6>, <p>, <span>, <div>, or <output> you decide!
       Attributes: id, class
-      -->
-      
-      <label>Total</label>
+      --></div>
+
+      <div class='totals'>
+      <h3>Total:</h3>
       <p id ='output-bill-total'>$0.00</p>
       
       <!-- total BILL once the tip is applied 
       Display total - element: <h1-6>, <p>, <span>, <div>, or <output> you decide!
          Attributes: id, class 
-      -->
+      --></div>
 
-      <label>Tip Per Person</label>
+      <h4>Per Person</h4>
+      <div class='line'></div>
+
+      <div class='totals'>
+      <h3>Tip:</h3>
       <p id ='output-tip-each-person'>$0.00</p>
       <!-- tip per person once split up 
       Display person tip - element: <h1-6>, <p>, <span>, <div>, or <output> you decide!
       Attributes: id, class 
-      -->
-      
-      <label>Bill Per Person</label>
+      --> </div>
+      <div class='totals'>
+      <h3>Total:</h3>
       <p id ='output-bill-each-person-total'>$0.00</p>      
       <!-- bill per person total once split up 
       Display PER PERSON total - element: <h1-6>, <p>, <span>, <div>, or <output> you decide!
       Attributes: id, class   
-      --> 
+      --> </div>
       </section>
-
-      <input type="text" id="persons"
-      placeholder="Number of people sharing the bill">
-      <button id="calculate">Calculate</button>
-      </div>
-
-      <div class="tip">
-         
 
    </div>
  
