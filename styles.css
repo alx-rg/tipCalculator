@@ -4,104 +4,58 @@
    box-sizing: border-box;
 }
 
-/* 
-   RE-USED SOME CSS SCRIPT FROM A PREVIOUS PROJECT TO 
-
-   .menu-container{
-   color: #fff;
-   background-color: #5995DA; 
-   padding: 20px 0;
+body {
    display: flex;
-   justify-content: center; 
-}
-
-.menu {
-   border: 1px solid #fff; THIS IS HANDY FOR DEBUGGING
-   width: 900px;
-   display: flex;
-   justify-content: space-between;
-}
-
-.links{
-   border: 1px solid rgb(249, 232, 45);
-   display: flex;
-   justify-content: flex-end;
-}
-
-.login {
-   margin-left: 20px;
-   border: 1px solid red
-}
-
-.header-container {
-   color: #5995DA;
-   background-color: #D6E9FE;
-   display: flex;
-   justify-content: center;
-}
-
-.header{
-   width: 900px;
-   height: 300px;
-   display: flex;
-   justify-content: space-between;
+   height: 100vh;
    align-items: center;
-}
-
-.social, .logo, .subscribe{
-   border: 1px solid #5995DA;
-}
-.social, .subscribe{
-   align-self: flex-end;
-   margin-bottom: 20px;
-}
-
-.photo-grid-container{
-   display:flex;
    justify-content: center;
 }
-.photo-grid{
-   width: 900px;
+
+
+.container {
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   grid-gap: 1rem;
+   grid-template-areas: "a b"
+                        "c d";
+   font-family: Helvetica;
+   align-content: center;
+   justify-content: center;
+   border: 2px solid black;
+}
+
+.section1 { 
+   grid-area: a;
    display: flex;
+   flex-direction: column;
    justify-content: center;
-   flex-wrap: wrap;
-   flex-direction: row-reverse;
-   align-items: center;
-
+   justify-self: end;
 }
 
-.first-item{
-   order: 1;
-}
-.last-item{
-   order: -1;
-}
-
-.photo-grid-item{
-   border: 1px solid #fff;
-   width: 300px;
-   height: 300px;
+.section2 {
+   grid-area: b;
+   display: flex;
+   flex-direction: column;
+   justify-self: start;
 }
 
-.footer{
-   display:flex;
-   justify-content: space-between;
+.section2 * {
+   margin: 4px 0 4px 0;
 }
 
-.footer-item{
-   border: 1px solid #fff;
-   background-color: #D6E9FE;
+
+section {
+   width: 200px;
    height: 200px;
-   flex: 1;
+   padding: 10px;
 }
 
-.footer-one,
-.footer-three{
-   background-color: #5995DA;
-   flex: initial;
-   width: 300px;
+input { 
+   border-width: 1px;
+   padding: .5em;
 }
 
-.signup{
-   margin-left:auto;
-} */
+h1 {
+   margin: 5px 0 5px 0;
+}
+
